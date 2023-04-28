@@ -13,14 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r penguins}
 library(palmerpenguins)
 library(ggplot2)
-ggplot2::theme_set(ggplot2::theme_minimal())
 ```
 
 ## Including Plots
 
 You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
+```{r plot, echo=FALSE}
 mass_flipper <- ggplot(data = penguins, 
                        aes(x = flipper_length_mm,
                            y = body_mass_g)) +
